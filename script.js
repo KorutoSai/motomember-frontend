@@ -16,16 +16,17 @@ else {
 
 function validate() {
     var password = document.getElementById("pass");
+    var lenght = document.getElementById("length")
     
 
-    if (password.value === "tite") {
+    if (password.value.length >= 3) {
        alert("Login Successful");
         window.location.href="member-request.html";
         return false;
     }
 
     else {
-        alert("Password is 'tite', login failed");
+        alert("Password is  wrong, login failed");
 
     }
 
